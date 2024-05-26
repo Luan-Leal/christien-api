@@ -1,0 +1,168 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+  transition: background 0.5s;
+  height: 100vh;
+}
+
+.icon-mobile{
+  position: absolute;
+  @media (min-width: 1000px) {
+    display: none;    
+  }
+}
+
+.icon-mobile img {
+  width: 500px;
+  height: auto;
+  margin-left: 100px;
+  margin-top: -100px;
+  filter: invert(1) grayscale(100%);
+}
+
+.weather-01d {
+  background: linear-gradient(to bottom, #87CEFA, #00BFFF);
+}
+
+.weather-01n {
+  background: linear-gradient(to bottom, #191970, #000080);
+}
+
+.weather-02d {
+  background: linear-gradient(to bottom, #87CEFA, #A9A9A9); 
+}
+
+.weather-02n {
+  background: linear-gradient(to bottom, #191970, #696969); 
+}
+
+.weather-03d {
+  background: linear-gradient(to bottom,#A9A9A9, #87CEFA );  
+}
+
+.weather-03n {
+  background: linear-gradient(to bottom,#696969, #191970); 
+}
+
+.weather-04d {
+  background: linear-gradient(to bottom, #D3D3D3, #A9A9A9);
+}
+
+.weather-04n {
+  background: linear-gradient(to bottom, #696969, #2F4F4F);
+}
+
+.weather-09d {
+  background: linear-gradient(to bottom, #87CEFA 5%, #A9A9A9 90%, #4682B4 100%);
+}
+
+.weather-09n {
+  background: linear-gradient(to bottom, #191970 5%, #696969  90%, #1E90FF 100%);
+}
+
+.weather-10d {
+  background: linear-gradient(to bottom, #87CEFA 30%, #A9A9A9 50%, #708090 90%); 
+}
+
+.weather-10n {
+  background: linear-gradient(to bottom, #191970 30%, #696969 50%, #2F4F4F 90%); 
+}
+
+.weather-11d {
+  background: linear-gradient(to bottom, #87CEFA 30%, #A9A9A9 50%, #708090 90%, #FFFF00); 
+}
+
+.weather-11n {
+  background: linear-gradient(to bottom, #191970 30%, #696969 50%, #2F4F4F 90%, #FFFF00); 
+}
+
+.weather-13d {
+  background: linear-gradient(to bottom, #87CEFA, #A9A9A9, #F0F8FF); 
+}
+
+.weather-13n {
+  background: linear-gradient(to bottom, #191970, #696969, #F0F8FF); 
+}
+
+.weather-50d {
+  background: linear-gradient(to bottom, #87CEFA 10%, #F5F5F5);
+}
+
+.weather-50n {
+  background: linear-gradient(to bottom, #191970 10%, #F5F5F5); 
+}
+
+.weather-unknown {
+  background: linear-gradient(to bottom, #CCCCCC, #888888);
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #CCCCCC;
+  z-index: 999;
+  height: 100dvh;
+}
+
+.icon-temp{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.icon-desktop{
+  filter: invert(1) grayscale(100%);
+  @media (max-width: 1000px) {
+    display: none;    
+  }
+}
+
+.place {
+ font-size: 1rem;
+}
+
+.temp {
+  font-size: 7rem;
+  font-weight: 800;
+  margin-left: 10%;
+  line-height: 100%;
+  color: white;
+  -webkit-text-stroke: 3px black;
+  @media (min-width: 1000px) {
+    margin-left: 40px;
+  }
+}
+
+.temp-text{
+  text-transform: capitalize;
+  font-size: 1.5rem;
+    color: white;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* const iconMap = {
+  "01d": i01d,
+  "01n": i01n,
+  "02d": i02d,
+  "02n": i02n,
+  "03d": i03d,
+  "03n": i03n,
+  "04d": i04d,
+  "04n": i04n,
+  "09d": i09d,
+  "09n": i09n,
+  "10d": i10d,
+  "10n": i10n,
+  "11d": i11d,
+  "11n": i11n,
+  "13d": i13d,
+  "13n": i13n,
+  "50d": i50d,
+  "50n": i50n,
+}; */
